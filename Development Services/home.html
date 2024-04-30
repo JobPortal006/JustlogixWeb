@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0wmN8wSILdShJlHqXz9PmkGj7JUKMw2O58w/zkk4pW9R8+j/JwUTNnYln8aEdn8" crossorigin="anonymous">
+  
+   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha384-CX6D7pPDoMU9GbbOzNj7Ds/uWsxEAhbKJ/tFmvqsX2xVaFswu0cuAU4z8vKXMOY+" crossorigin="anonymous"></script>
+  
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-b4PSKzVHYs7jpL3FGBYsBj5zDq7pd8U7F/2rUV7n+rbZ8ScuBY6ZI35gZkR/a5Fd" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Appdevelopment service</title>
+</head>
+
+<body>
+ 
+
+
+
+<!-- navabar -->
+
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white; height: auto; box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05); margin-bottom: 1px !important;">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="padding: 0;">
+        <img src="./appdev-images/Logo.png" alt="Logo" class="nav-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="border: none;"></span>
+      </button>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <a class="navbar-brand" href="#" style="padding: 0;">
+            <img src="./aboutImages/Logo.png" alt="Logo" class="nav-logo-sidebar">
+          </a>
+          <span class="cancel-icon" onclick="closeSidebar()">&times;</span>
+        </div>
+        <ul class="navbar-nav" id="nav-sidebar-ul">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('about')">About <i id="about-icon" class="fas bi-chevron-down about-icon"></i></a>
+            <div id="about-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownAbout" style="display: none;">
+              <a class="dropdown-item" href="#">JustLogix</a>
+              <a class="dropdown-item" href="#">Skein Technologies</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('services')">Services <i id="services-icon" class="fas bi-chevron-down"></i></a>
+            <div id="services-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownServices"
+              style="display: none;">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('Technologies')">Technologies <i id="services-icon"
+                class="fas bi-chevron-down"></i></a>
+            <div id="Technologies-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies"
+              style="display: none;">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('Industries')">Industries <i id="services-icon"
+                class="fas bi-chevron-down"></i></a>
+            <div id="Industries-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownIndustries"
+              style="display: none;">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('Portfolios')">Portfolios <i id="services-icon"
+                class="fas bi-chevron-down"></i></a>
+            <div id="Portfolios-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownPortfolios"
+              style="display: none;">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><button type="button" class="navbar-button">Get in Touch</button></a>
+          </li>
+
+          <!-- Add other dropdown items -->
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto"
+          style="font-weight: 400; font-family: 'Source Sans Pro', sans-serif; gap: 10px !important;">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownIndustries" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownIndustries">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnologies" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologies</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><button type="button" class="navbar_button">Get in Touch</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>
+    // Function to open sidebar
+    function openSidebar() {
+      document.querySelector('.sidebar').classList.add('active');
+      document.querySelector('body').classList.add('sidebar-open');
+    }
+
+    // Function to close sidebar
+    function closeSidebar() {
+      document.querySelector('.sidebar').classList.remove('active');
+      document.querySelector('body').classList.remove('sidebar-open');
+    }
+
+
+    // Function to toggle dropdown
+    function toggleDropdown(id) {
+      var dropdown = document.getElementById(id + '-dropdown');
+      var icon = document.getElementById(id + '-icon');
+      if (dropdown.style.display === "none") {
+        dropdown.style.display = "block";
+        icon.classList.remove('bi-chevron-down');
+        icon.classList.add('bi-chevron-up');
+      } else {
+        dropdown.style.display = "none";
+        icon.classList.remove('bi-chevron-up');
+        icon.classList.add('bi-chevron-down');
+      }
+    }
+
+    // Toggle sidebar on navbar toggler click
+    document.querySelector('.navbar-toggler').addEventListener('click', function () {
+      if (document.querySelector('.sidebar').classList.contains('active')) {
+        closeSidebar(); // Close sidebar if already open
+      } else {
+        openSidebar(); // Open sidebar if closed
+      }
+    });
+  </script>
+
+    
+  <!-- Section 1 --> 
+  
+
+<div class="application-bgimage">
+  <img src="./appdev-images/Vector 6 (4).png" alt="sg" class="img-fluid">
+</div> 
+    <div class="container">
+  <div class="appdevfirst1 row">
+    <div class="col-md-6">
+      <div class="appdevfirstparaone">  
+        Application <br> Development Services
+      </div>
+      <div class="appdevfirstparatwo">
+        "Leverage cutting-edge technology and expert
+        consultancy to drive your business forward in the digital age."
+      </div>
+      <div class="appdevfirstparathree">
+        Develop a scalable, dynamic, and feature-rich application with our
+        AngularJS development company. Our skilled experts are
+        proficient in providing engaging and effective Angular development services with a proven record of success.
+      </div>
+      <button class="appdevfirstbutton btn btn-primary">
+        <span style="color: rgba(255, 255, 255, 1);">Discover Our Service</span>
+      </button>
+    </div>
+    <div class="col-md-6 appdevfirst2">
+      <img src="./appdev-images/4420083 1 (3).png" alt="sg" class="Application-image img-fluid">
+    </div>
+  </div>
+</div> 
+    
+
+
+
+<!-- Section 2 -->
+
+<div class="innovation">
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-6 innovation-first-col">
+        <div class="first-div">
+          <h1>Our Application <br> Development Service <span class="span-text">Innovations</span><img src="appdev-images/Rectangle 81.png" /></h1>
+        </div>
+        <div class="outer-div">
+          <p class="inner-p">Embark on a journey of digital excellence with our top-tier ReactJS development services. 
+            At JustLogix, we're not just developers; we're innovators and problem-solvers dedicated to elevating your 
+            online presence. From crafting bespoke web applications to revitalizing legacy systems with ReactJS,
+             our services are a blend of technical mastery and creative finesse. Dive into our world of ReactJS
+             </p>
+        </div>
+      </div>
+      <div class="col-md-6" >
+        <div class="our-application-cards">
+          
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item item1">
+              <h2 class="accordion-header" id="headingone">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                  Mobile Application Development Services
+                </button>
+              </h2>
+              <div id="collapseone" class="accordion-collapse collapse" aria-labelledby="headingone" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item item1">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Mobile Application Development Services
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item item1">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Desktop Application Development Services
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item item1">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  SaaS Application Development Services
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item item1">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Enterprise App Development Services
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+                </div>
+              </div>
+            </div>
+            
+      
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleCardStyles(card) { 
+      card.classList.toggle("active");
+      var allCards = document.querySelectorAll(".my-card");
+      allCards.forEach(function(item) {
+          if (item !== card) {
+              item.classList.remove("active");
+              var otherImage = item.querySelector(".Menu-down");
+              if (otherImage) {
+                  otherImage.classList.remove("rotate-360");
+              }
+              var otherHiddenPara = item.querySelector(".hidden-para");
+              if (otherHiddenPara) {
+                  otherHiddenPara.style.display = "none";
+              }
+          }
+      });
+
+ 
+      var defaultStyles = {
+        fontFamily: "Arial",
+        fontSize: "16px",
+        fontWeight: "normal",
+        lineHeight: "1.5",
+        textAlign: "left"
+    };
+
+    allCards.forEach(function(item) {
+        var para = item.querySelector(".card-para");
+        if (para) {
+            Object.keys(defaultStyles).forEach(function(style) {
+                para.style[style] = defaultStyles[style];
+            });
+        }
+    });
+
+    if (card.classList.contains("active")) {
+        var para = card.querySelector(".card-para");
+        if (para) {
+            para.style.fontSize = "20px";
+            para.style.fontWeight = "600";
+            para.style.lineHeight = "25.14px";
+            para.style.textAlign = "left";
+        }
+    }
+
+      var image = card.querySelector(".Menu-down");
+      if (image) {
+          image.classList.toggle("rotate-360");
+      }
+
+      var hiddenPara = card.querySelector(".hidden-para");
+      if (hiddenPara) {
+          hiddenPara.style.display = hiddenPara.style.display === "none" || !hiddenPara.style.display ? "block" : "none";
+      }
+  }
+</script>
+
+
+
+
+    <!-- third section-->
+       <div class="container choose-application1">
+      <div  class="appdevthird">
+          <h1  class="appdevthirdheading">
+              Why Choose Application<span style="color:#2CA068">Development Services<img src="appdev-images/Rectangle 81.png"/></span>
+              </h1>
+          <div class="row">
+            <div class="col"  style="margin-top: 60px;width: 100px;top: 92px;gap: 0px;opacity: 0px;">
+                  <div  class="appdevthirdpara">
+                      At ValueCoders, we understand the dynamic nature of the retail and eCommerce industry. With
+                      our web and mobile app development expertise, we’re committed to delivering innovative
+                      solutions that drive growth and customer engagement.Trust us to craft solutions that meet and
+                      exceed your expectations, ensuring your retail or eCommerce business stays ahead in the
+                      competitive market.Trust us to craft solutions that meet and exceed your expectations, ensuring
+                      your retail or eCommerce business stays ahead in the competitive market.
+                  </div>
+                  
+              <div class="row">
+                
+                <div class="col-md-6">
+                  <div  class="appdevthreeicon1">
+                  <div class="choose-application-icons">
+                  <i class="bi bi-check2"></i>
+                  <p style="margin-left: 10px;">
+                      Advanced Development Approach
+                  </p>
+              </div>
+              <div class="choose-application-icons">
+                              <i class="bi bi-check2"></i>
+                              <p style="margin-left: 10px;">
+                                User Oriented Ideology
+                              </p>
+                          </div>
+                          <div class="choose-application-icons">
+                              <i class="bi bi-check2"></i>
+                              <p style="margin-left: 10px;">
+                                Better Performance Guarantee 
+                              </p>
+                          </div>
+                          <div class="choose-application-icons">
+                              <i class="bi bi-check2"></i>
+                              <p style="margin-left: 10px;">
+                                Post launch Support & Maintenance
+                              </p>
+                          </div>
+                        </div>
+                          
+                </div>
+             
+                <div class="col-md-6">
+                  <div class="appdevthreeicon2">
+                  <div class="choose-application-icons">
+                  <i class="bi bi-check2"></i>
+                  <p style="margin-left: 10px;">
+                    Flexible Engagement Model
+                  </p>
+              </div>
+              <div class="choose-application-icons">
+                              <i class="bi bi-check2"></i>
+                              <p style="margin-left: 10px;">
+                                All in One- from Development
+                              </p>
+                          </div>
+                          <div class="choose-application-icons">
+                              <i class="bi bi-check2"></i>
+                              <p style="margin-left: 10px;">
+                                Assured Security Compliance
+                              </p>
+                          </div>
+                          <div class="choose-application-icons">
+                              <i class="bi bi-check2"></i>
+                              <p style="margin-left: 10px;">
+                                Ready to launch Solution
+                              </p>
+                          </div>
+                </div>
+              </div>
+                </div>
+              </div>
+              <div class="col">
+                  <div class="row">
+                      <div class="col">
+                          <div class="card"
+                               style="width: 240px;border:none;box-shadow: 4px 4px 20px 12px rgba(194, 193, 193, 0.18);height: 272px;top: 146px;gap: 0px;opacity: 0px;">
+                              <img class="card-img-top"  src="appdev-images/Mask group.png" alt="Card image cap">
+                              <div class="card-body">
+                                  <a href="#" class="btn"
+                                     style="background-color: rgba(225, 205, 251, 0.56);font-size: 12px;font-weight: 600;line-height: 15.08px;text-align: center;">
+                                      Great Visibility</a>
+                                  <p class="card-text"
+                                     style="font-size: 12px;font-weight: 400;line-height: 20px;text-align: left;">
+                                      Some quick example text to build on the card title and make up 
+                                      content.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="row" style="margin-top: 60px;">
+                              <div class="card"
+                                   style="width: 240px;border:none;box-shadow: 4px 4px 20px 12px rgba(194, 193, 193, 0.18);">
+                                  <img class="card-img-top" style="width: 240px; margin-left: -12px;" src="appdev-images/Mask group (1).png" alt="Card image cap">
+                                  <div class="card-body">
+                                      <a href="#" class="btn"
+                                         style="background-color: rgba(187, 234, 179, 0.56);font-size: 12px;font-weight: 600;line-height: 15.08px;text-align: center;">
+                                          Centralized Security</a>
+                                      <p class="card-text"
+                                         style="font-size: 12px;font-weight: 400;line-height: 20px;text-align: left;">
+                                          Cloud security allows consolidate protection of cloud-based networks
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="card"
+                                   style="width: 240px;border:none;box-shadow: 4px 4px 20px 12px rgba(194, 193, 193, 0.18);margin-top: 30px;">
+                                  <img class="card-img-top" style="width: 240px; margin-left: -12px;" src="appdev-images/Mask group (2).png" alt="Card image cap">
+                                  <div class="card-body">
+                                      <a href="#" class="btn"
+                                         style="background-color: rgba(179, 185, 234, 0.56);font-size: 12px;font-weight: 600;line-height: 15.08px;text-align: center;">
+                                          Data Protection</a>
+                                      <p class="card-text"
+                                         style="font-size: 12px;font-weight: 400;line-height: 20px;text-align: left;">
+                                          The best cloud computing providers will provide data security by design
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> 
+       
+
+  <div class="container choose-application2">
+    <div class="row">
+        <div class="col-md-12">
+          <h1 class="main-heading">Why Choose Application <span style="color: #2CA068;">Development<span class="service-text"> Services</span></span></h1>
+         
+          
+            <div id="cardContainer">
+              
+                <div class="card service-card" style="box-shadow: 4px 4px 20px 12px #C2C1C12E; border: none !important; background-color: transparent" >
+                    <div class="">
+                        <div class="cardimage1"> <img class="card-img-top1"src="appdev-images/Mask group.png" 
+                          alt="Card image cap"></div>
+                          
+                          <a href="#" class="btn" style="background-color: rgba(225, 205, 251, 0.56);
+                          font-size: 12px;
+                          font-weight: 600;
+                          line-height: 15.08px;
+                          text-align: center;
+                          margin:20px 20px 10px 20px;
+                          ">
+                                  Great Visibility</a>
+                        <p class="card-text" style="
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        margin:10px 20px 10px 20px;
+                        text-align: left;
+                        
+                        ">Only an integrated cloud-based security stack is
+                           capable of providing the centralized visibility .</p>
+                    </div>
+                </div>
+             
+                <div class="card service-card" style="display: none;box-shadow: 4px 4px 20px 12px #C2C1C12E; border: none !important; background-color: transparent">
+                    <div class="">
+                        <div class="cardimage2"> <img class="card-img-top2" src="appdev-images/Centralized Security.png" alt="Card image cap"></div>
+                        <a href="#" class="btn" style="background-color:rgba(187, 234, 179, 0.56);
+                        ;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 15.08px;
+                        margin:20px 20px 10px 20px;
+                        text-align: center;
+                        ">
+                                Centralized Security</a>
+                                <p class="card-text" style="
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                text-align: left;
+                                margin:10px 20px 10px 20px;
+                                ">Cloud security allows consolidate protection of cloud-based networks
+                                      </p>
+                    </div>
+                </div>
+                
+                <div class="card service-card" style="display: none;box-shadow: 4px 4px 20px 12px #C2C1C12E; border: none !important; background-color: transparent">
+                    <div class="">
+                      <img class="card-img-top3" src="appdev-images/Mask group (2).png" alt="Card image cap">
+                      <a href="#" class="btn" style="background-color:rgba(187, 234, 179, 0.56);
+                      font-size: 12px;
+                      font-weight: 600;
+                      line-height: 15.08px;
+                      text-align: center;
+                      margin:20px 20px 10px 20px;
+                      ">
+                              Centralized Security</a>
+                              <p class="card-text" style="
+                              font-size: 12px;
+                              font-weight: 400;
+                              line-height: 20px;
+                              text-align: left;
+                              margin:10px 20px 10px 20px;
+                              ">Cloud security allows consolidate protection of cloud-based networks
+                                    </p>                    </div>
+                </div>
+               
+            </div>
+           
+            <div class="btn-group" role="group">
+                <i id="prevBtn" class="bi bi-arrow-left" ></i> 
+                <i id="nextBtn" class="bi bi-arrow-right"></i>
+            </div>
+        </div>
+        <div>
+          <div class="col">
+            <div class="service">
+            <p class="appdevthreepara1">At ValueCoders, we understand the dynamic nature of the retail and eCommerce industry. With
+                our web and mobile app development expertise, we’re committed to delivering innovative
+                solutions that drive growth and customer engagement. Trust us to craft solutions that meet and
+                exceed your expectations, ensuring your retail or eCommerce business stays ahead in the
+                competitive market.</p>
+                <div class="col choose-application-icons" 
+                style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
+                  <i class="bi bi-check2"></i>
+                  <span style="margin-left: 16px;">
+                      Flexible Engagement Model
+                  </span>
+              </div>
+              <div class="col choose-application-icons" 
+                style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
+                  <i class="bi bi-check2"></i>
+                  <span style="margin-left: 16px;">
+                    User Oriented Ideology
+                  </span>
+              </div>
+              <div class="col choose-application-icons" 
+                style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
+                  <i class="bi bi-check2"></i>
+                  <span style="margin-left: 16px;">
+                    Better Performance Guarantee 
+                  </span>
+              </div>
+              <div class="col choose-application-icons" 
+                style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
+                  <i class="bi bi-check2"></i>
+                  <span style="margin-left: 16px;">
+                    Post launch Support & Maintenance
+                  </span>
+              </div>
+              <div class="col choose-application-icons" 
+                style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
+                  <i class="bi bi-check2"></i>
+                  <span style="margin-left: 16px;">
+                    Flexible Engagement Model
+                  </span>
+              </div>
+              <div class="col choose-application-icons" 
+                style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
+                  <i class="bi bi-check2"></i>
+                  <span style="margin-left: 16px;">
+                    All in One- from Development to Hosting
+                  </span>
+              </div>
+              <div class="col choose-application-icons" 
+                style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
+                  <i class="bi bi-check2"></i>
+                  <span style="margin-left: 16px;">
+                    Assured Security Compliance
+                  </span>
+              </div>
+              <div class="col choose-application-icons" 
+                style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
+                  <i class="bi bi-check2"></i>
+                  <span style="margin-left: 16px;">
+                    Ready to launch Solution
+                  </span>
+              </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>  
+
+
+ <script>
+   
+    document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".service-card");
+        let currentIndex = 0;
+
+        function showCard(index) {
+            cards.forEach((card, i) => {
+                if (i === index) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        function nextCard() {
+            currentIndex = (currentIndex + 1) % cards.length;
+            showCard(currentIndex);
+        }
+
+        function prevCard() {
+            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+            showCard(currentIndex);
+        }
+
+        document.getElementById("nextBtn").addEventListener("click", nextCard);
+        document.getElementById("prevBtn").addEventListener("click", prevCard);
+    });
+</script> 
+
+
+
+
+
+
+     <!-- four section-->
+
+
+
+     <div class="container">
+      <div class="App_Developer_Service_section3layout">
+        <div class="row">
+          <!-- First Column -->
+          <div class="col-md-4 mb-5">
+            <div class="section3firstcollayout">
+              <!-- Content for the first column -->
+              <h2 class="section3firstcolheading">Leverage the Technical Expertise of <span>Our Developers<img
+                    src="./appdev-images/Rectangle 81.png" class="section3headingline" /></span></h2>
+                    <div class="buttonarrow">
+                      <a href="your_link_here" class="appdevfourtecho1">All technologies we work with<img src="./appdev-images/arrow.png" /></a>
+                     <div class="appdevfourtecholinealign1">
+                      <hr class="appdevfourtecholine1">
+                     </div>
+                
+                     </div>
+                
+            </div>
+          </div>
+          
+          <!-- Second Column -->
+          <div class="col-md-7 secondcollayout">
+            <!-- First Row Inside Second Column -->
+            <div class="check"  >
+              <div class="row section3col2firstrow">
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609073.png" class="image1 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609074.png" class="image2 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609075.png" class="image3 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609076.png" class="image4 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609077.png" class="image5 img-fluid" />
+                </div>
+              </div>
+              <!-- Second Row Inside Second Column -->
+              <div class="row section3col2firstrow">
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609078.png" class="image6 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609079.png" class="image7 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609080.png" class="image8 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609081.png" class="image9 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609082.png" class="image10 img-fluid" />
+                </div>
+              </div>
+              <!-- Third Row Inside Second Column -->
+              <div class="row section3col2firstrow">
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609083.png" class="image11 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609084.png" class="image12 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609070.png" class="image13 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609071.png" class="image14 img-fluid" />
+                </div>
+                <div class="col-md-2">
+                  <img src="./appdev-images/Group 2609072.png" class="image15 img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-12 div-footer">
+          <div class="buttonarrow">
+           <a href="your_link_here" class="appdevfourtecho">All technologies we work with<img src="./appdev-images/arrow.png" /></a>
+          <div class="appdevfourtecholinealign">
+           <hr class="appdevfourtecholine">
+          </div>
+     
+          </div>
+        </div>
+          
+        </div>
+      </div>
+    </div> 
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  const secondCollayout = document.querySelector('.secondcollayout');
+
+  secondCollayout.addEventListener('mouseenter', function () {
+      document.body.style.cursor = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'36\' height=\'36\'><circle cx=\'18\' cy=\'18\' r=\'18\' fill=\'rgba(44, 160, 104, 0.72)\'/></svg>") 18 18, auto';
+  });
+
+  secondCollayout.addEventListener('mouseleave', function () {
+      document.body.style.cursor = 'auto';
+  });
+});
+
+  function redirectToPage() {
+    
+    window.location.href = "your_page_url";
+  }
+
+</script>   
+
+
+  <!-- five section-->  
+
+
+        <div class="container">
+         <div class="appdevfive">
+           <div class="row">
+             <div class="col-12">  
+               <h1 class="appdevfiveheading">Our Application Development<span class="appdevfiveheading2">
+                Methodologies</span><img src="./appdev-images/Rectangle 81.png"/></h1>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-12 appdevfiveone">
+              Embark on a journey of digital excellence with our top-tier ReactJS development services. At JustLogix, we're not just developers; we're innovators and problem-solvers dedicated to elevating your online presence. From crafting bespoke web applications to revitalizing legacy systems with ReactJS, our services are a blend of technical mastery and creative finesse. At JustLogix,
+               we're not just developers; we're innovators and problem-solvers dedicated to elevating your online presence. 
+             </div>
+           </div>
+           <div class="row appdevfivecard">
+            <div class="col-md-4 mb-3">
+              <div class="card custom-card ">
+                <div class="card-body">
+                  <h5 class="card-title"> <img src="./appdev-images/Group (1).png" alt=""> Agile</h5>
+                  <p class="card-text">Seamlessly integrate development and operations teams to enhance collaboration, automate processes, ensure swift responses to changes, improve quality, and reduce costs.</p>
+                  <button class=" card-bottom">Read More &rarr;</button>
+                </div>
+              </div>
+            </div>
+             <div class="col-md-4 mb-3">
+               <div class="card custom-card ">
+                 <div class="card-body">
+                   <h5 class="card-title"> <img src="./appdev-images/ph_infinity-light.png" alt=""> DevOps</h5>
+                   <p class="card-text">Seamlessly integrate development and operations teams to enhance collaboration, automate processes, ensure swift responses to changes, improve quality, and reduce costs.</p>
+                   <button class="card-bottom">Read More &rarr;</button>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-4 mb-3">
+               <div class="card custom-card ">
+                 <div class="card-body">
+                   <h5 class="card-title"> <img src="./appdev-images/icon-park-outline_circular-connection.png" alt=""> Lean</h5>
+                   <p class="card-text">Optimize your development process with our Lean Model. Focused on efficiency, it streamlines workflows, ensuring a lean and agile development cycle that maximizes impact.</p>
+                   <button class="card-bottom">Read More  &rarr;</button>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="row mt-3">
+             <div class="col-12 div-footer">
+              <div class="buttonarrow">
+                <a href="your_link_here" class="appdevtechunderline5one">All Methodologies</a>
+                <img class="appdevtechunderlinearrow" src="./appdev-images/arrow.png" />
+              </div>
+              <div class="appdevtechunderlinealign">
+                <hr class="appdevtechunderline">
+               </div>
+              </div>
+          
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+   
+      
+   
+<!-- six section-->
+
+
+   <div class="container">
+  <div class="AppModelsection5layout">
+  
+  <div class="row mt-5">
+    <div class="col">
+      <h1 class="text-left section5heading">Engagement Models <span>We Offer <img src="./appdev-images/Rectangle 81.png"/></span></h1>
+    </div>
+  </div>
+
+  
+  <div class="section5cardslayout">
+  <div class="row mt-5 ">
+      
+      
+      
+      <div class="col-md-4">
+          <div class="section1firstcard">
+        <h2 class="cardheading">Staff Augmentation</h2>
+        <p class="cardparagraph">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasci voluptatem! Sed molestias animi ad quos modi qui. Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quisni porro id. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quisni porro id.</p>
+        <ul class="list-unstyled cardlist">
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Agile processes</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Transparent pricing</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Monthly billing</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Maximum flexibility</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Suitable for startups
+            </li>
+        </ul>
+      </div>
+      </div>
+    
+      
+      <div class="col-md-4">
+          <div class="section1firstcard">
+        <h2 class="cardheading">Dedicated Team</h2>
+        <p class="cardparagraph">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasci voluptatem! Sed molestias animi ad quos modi qui. Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quisni porro id. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quisni porro id.</p>
+        <ul class="list-unstyled cardlist">
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Agile processes</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Transparent pricing</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Monthly billing</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Maximum flexibility</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Suitable for startups
+           </li>
+        </ul>
+      </div>
+      </div>
+      
+      
+      <div class="col-md-4">
+          <div class="section1firstcard">
+        <h2 class="cardheading">Full Process Outsourcing</h2>
+        <p class="cardparagraph">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasci voluptatem! Sed molestias animi ad quos modi qui. Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quisni porro id. Non commodi aliquam qui voluptatem dignissi mos sed modi nihil aut Quisni porro id.</p>
+        <ul class="list-unstyled cardlist">
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Agile processes</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Transparent pricing</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Monthly billing</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i> Maximum flexibility</li>
+          <li ><i class="bi bi-check-circle-fill custom-check-circle"></i>Suitable for startups
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
+  
+  <div class="row mt-5">
+    <div class="col section5button">
+      <button class="btn btn-primary">Discuss More</button>
+    </div>
+  </div>
+  </div>
+</div>
+</div>     
+
+
+<!--7 th sec -->
+
+  <div class="container">
+  <div class="appdevseven"> 
+      <div class="row">
+          <div class="col-md-12 appdevsevenheading">
+              <h1 class="text-left section5heading ">Emerging technologies in <span class="">Application Development</span><img src="./appdev-images/Rectangle 81.png"/></h1>
+              <div class="row">
+                  <div class="col-md-12 appdevsevenheading1">
+                      Only an integrated cloud-based security stack is capable of providing
+                       the centralized visibility of cloud resources and data that is vital for
+                        defending against breaches and other potential threats. Only an integrated 
+                        cloud-based security stack is capable of providing the centralized visibility
+                         of cloud resources.
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="appdevsevenheadindcard1">
+                  
+                  
+                      <hr>
+                
+                  <span class="appdevar">Internet of Things</span><br>
+                  <div style="margin-bottom:20px" 
+                  class="col-md-12 appdevsevenheading2">
+                      Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed
+                       modi nihil aut Quisni porro id suscipit quam qui excepturi dolor ut quasini voluptatem!
+                        Sed molestias animi ad quos modi qui 
+                  </div>
+                  
+                   
+                      <hr>
+                
+                  <span class="appdevar">AI/Machine Learning</span><br>
+                  <div class="col-md-12 appdevsevenheading3" > Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil 
+                    aut Quisni porro id suscipit quam qui excepturi dolor ut quasini voluptatem! Sed molestias animi 
+                    ad quos modi qui </div>
+                  
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="appdevsevenheadindcard2">
+               
+                      
+                      <hr>
+                  </div>
+                  <span class="appdevar">AR/VR Technologies</span><br>
+                  <div style="margin-bottom:20px">
+                    <div class="col-md-12 appdevsevenheading4">  Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut
+                      Quisni porro id suscipit quam qui excepturi dolor ut quasini voluptatem! Sed molestias animi ad 
+                      quos modi qui </div>
+                     
+                  </div>
+               
+                   
+                      <hr>
+                 
+                  <span class="appdevar">Blockchain Security</span><br>
+                   <div class="col-md-12 appdevsevenheading5">
+                  Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quisni
+                   porro id suscipit quam qui excepturi dolor ut quasini voluptatem! Sed molestias animi ad quos 
+                    qui 
+                    </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>   
+
+
+
+<!-- 8 section  -->
+
+
+
+     <div class="container">
+  <div class="appdeveight1">
+    <div class="appdeveightheading">
+      <h1>Industries <span class="head">Served</span> <img src="./appdev-images/Rectangle 81.png" class="head-img"></h1>
+    </div>
+    <div class="row" >
+      <div class="col-md-12 scrollable-container">
+        <div class="row-first">
+          <P class="col-first  check1 selected" onclick="changeImage(this,'./appdev-images/pet.png',1)">Health Care </P>
+          <P class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',2)">Finance</P>
+          <P class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',3)">Travel</P>
+          <P class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',4)">Education</P>
+          <P class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',5)">Media</P>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="col-img">
+          <img src="./appdev-images/pet.png" id="main-img" alt="mutu" class="col-imge img-fluid">
+        </div>
+      </div>
+      <div class="col-md-6 col-para">
+        <p>
+          At JustLogix, we specialize in providing cutting-edge IT solutions across a multitude of industries,
+           fostering innovation, growth, and digital transformation worldwide. Duis aute irure dolor in 
+            in volup tate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaorem 
+             ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+               aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <div class="appdeveight-button">
+          <button class="btn">Read More <i class="bi bi-arrow-right"></i></button>
+          <div class="button_underline"></div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+
+    </div>
+  </div>
+
+
+  <script>
+    var lastClickedElement = null;
+    window.onload = function() {
+      var defaultSelected = document.querySelector('.selected');
+      changeImage(defaultSelected, './appdev-images/pet.png', 1);
+    };
+    
+    function changeImage(element, src, ) {
+        var mainImg = document.getElementById('main-img');
+        mainImg.src = src;
+        
+        if (lastClickedElement !== null) {
+            lastClickedElement.style.color = "";
+        }
+        element.style.color = "#2CA068";
+        lastClickedElement = element;
+    }
+  </script>
+                    
+
+
+<!--9 section-->
+<div class="appstudies_session8_main_div">
+  <div class="container" style="margin-top:80px" >
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <p class="appstudies_session8_para1">
+        Our <span class="appstudies_session8_span1">Case Studies</span>
+      </p>
+      <p class="appstudies_session8_para2">
+        Management Software Solution for small to mid-sized accounting firms.
+      </p>
+      <div class="col-md-6 appstudies_session8_image_display1">
+        <img src="appdev-images/frame.png" alt="Image" class="about_session8_image1 img-fluid">
+      </div>
+      <div class="row mt-3 appstudies_session8_point_display1">
+        <div class="col">
+          <div class="bottom-buttons d-flex justify-content-center">
+            <button onclick="displayContent(1)" class="active btn btn-sm"></button>
+            <button onclick="displayContent(2)" class=" activee btn btn-sm"></button>
+            <button onclick="displayContent(3)" class=" activee btn btn-sm"></button>
+            <button onclick="displayContent(4)" class=" activee btn btn-sm"></button>
+          </div>
+        </div>
+      </div>
+      <p class="appstudies_session8_para3" id="content1">
+        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
+        suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
+        omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
+        sit amet.
+      <br>
+      <br>
+
+        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut </p>
+      <p class="appstudies_session8_para3" id="content2" style="display:none;">
+        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
+        suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
+        omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
+        sit amet.
+      </p>
+      <p class="appstudies_session8_para3" id="content3" style="display:none;">
+        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
+        suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
+        omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
+        sit amet.
+      </p>
+      <p class="appstudies_session8_para3" id="content4" style="display:none;">
+        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
+        suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
+        omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
+        sit amet.
+      </p>
+      <div class="appstudies_session8_button_div">
+        <button type="button" class="appstudies_session8_button  ">Learn More &rarr;</button>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex justify-content-end" id="appstudies_session8_image2"> 
+      <img src="appdev-images/frame.png" alt="Image" class="img-fluid">
+    </div>
+  </div>
+  <div class="row mt-3 appstudies_session8_point_display2">
+    <div class="col">
+      <div class="bottom-buttons1 d-flex justify-content-center">
+        <button onclick="displayContent(1)" class="active btn btn-sm "></button>
+        <button onclick="displayContent(2)" class="btn btn-sm bottom_buttons"></button>
+        <button onclick="displayContent(3)" class="btn btn-sm bottom_buttons"></button>
+        <button onclick="displayContent(4)" class="btn btn-sm bottom_buttons"></button>
+      </div>
+    </div>
+  </div>
+</div>    
+</div>
+
+<script>
+  var currentContent = 1; 
+
+  function displayContent(contentNumber) {
+    var contentElements = document.querySelectorAll(".appstudies_session8_para3");
+    contentElements.forEach(function (element) {
+      element.style.display = "none";
+    });
+
+    var content = document.getElementById("content" + contentNumber);
+    content.style.display = "block";
+
+    var buttons1 = document.querySelectorAll(".bottom-buttons button");
+    var buttons2 = document.querySelectorAll(".bottom-buttons1 button");
+    
+    buttons1.forEach(function (button) {
+      button.classList.remove("active");
+    });
+    buttons2.forEach(function (button) {
+      button.classList.remove("active");
+    });
+
+    buttons1[contentNumber - 1].classList.add("active");
+    buttons2[contentNumber - 1].classList.add("active");
+
+    currentContent = contentNumber; 
+  }
+
+  
+  function autoSlideContent() {
+    currentContent++;
+    if (currentContent > 4) {
+      currentContent = 1;
+    }
+    displayContent(currentContent);
+  }
+
+
+  var slideInterval = setInterval(autoSlideContent, 3000); 
+</script>   
+
+
+<!-- 10 section-->
+  
+
+<div class="container Testimonials1">
+  <div class="appdevtenheading">
+    Our <span style="color: rgba(44, 160, 104, 1);">Testimonials</span>
+     <img src="appdev-images/Rectangle 81.png" />
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-end">
+        <img src="./appdev-images/Application development testimonial.png" alt="Image" class="appdevtenimage1">
+      </div>
+    </div> 
+    <div class="col">
+      <img src="./appdev-images/“.png" alt="comma" class="comma">
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="appdevtenimagepluscontent">
+              <img src="appdev-images/Frame 286 (1).png"  alt="Image" class="appdevteniamge2two"><br>
+              <p id="testimonial1">“Justlogix has been able to ramp up their teams to meet our needs,
+              even for our new development initiatives. The code they delivered was
+              of high quality, and overall, the communication was very good.”</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="appdevtenimagepluscontent">
+              <img src="appdev-images/Frame 286 (1).png"  alt="Image" class="appdevteniamge2two"><br>
+              <p id="testimonial2">Content for second testimonial goes here.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="appdevtenimagepluscontent">
+              <img src="appdev-images/Frame 286 (1).png" alt="Image" class="appdevteniamge2two"><br>
+              <p id="testimonial3">Content for third testimonial goes here.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev testimonial-prev-icon-head" href="#testimonialCarousel" role="button" data-slide="prev">
+          <div class="testimonial-prev-icon"> <i class="bi bi-arrow-left"></i></div>
+         </a>
+         <a class="carousel-control-next testimonial-next-icon-head" href="#testimonialCarousel" role="button" data-slide="next">
+           <div class="testimonial-next-icon"><i class="bi bi-arrow-right"></i></div>
+         </a>  
+      </div>
+     
+    </div>
+  </div>
+</div> 
+
+
+
+<script>
+
+  document.getElementById('testimonial2').innerText = "New content for second testimonial.";
+  document.getElementById('testimonial3').innerText = "New content for third testimonial.";
+</script> 
+
+
+
+
+<div class="testimonials-container Testimonials2" style="margin-top:10px">
+  <div class="appdevtenheading">
+    Our <span style="color: rgba(44, 160, 104, 1);">Testimonials</span>
+     <img src="appdev-images/Rectangle 81.png" />
+  </div>
+  <div class="testimonials-carousel">
+    <img src="./appdev-images/“.png" alt="comma" class="testimonial-image">
+    <div id="testimonialCarousel1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial-content">
+            <img src="./appdev-images/Frame 286 (1).png" alt="Image" class="testimonial-image"><br>
+            <p class="testimonial-text">“Justlogix has been able to ramp up their teams to meet our needs,
+            even for our new development initiatives. The code they delivered was
+            of high quality, and overall, the communication was very good.”</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-content">
+            <img src="./appdev-images/Frame 286 (1).png" alt="Image" class="testimonial-image"><br>
+            <p class="testimonial-text">Content for second testimonial goes here.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-content">
+            <img src="./appdev-images/Frame 286 (1).png" alt="Image" class="testimonial-image"><br>
+            <p class="testimonial-text">Content for third testimonial goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-controls d-flex justify-content-center">
+      <div class="prev-btn testimonial-prev-icon1"><i class="bi bi-arrow-left"></i></div>
+      <div class="next-btn testimonial-next-icon1"><i class="bi bi-arrow-right"></i></div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var carousel = document.getElementById('testimonialCarousel1');
+    var carouselInstance = new bootstrap.Carousel(carousel);
+
+    document.querySelectorAll('.next-btn').forEach(function (button) {
+      button.addEventListener('click', function () {
+        carouselInstance.next();
+      });
+    });
+
+    document.querySelectorAll('.prev-btn').forEach(function (button) {
+      button.addEventListener('click', function () {
+        carouselInstance.prev();
+      });
+    });
+  });
+</script> 
+
+
+<!-- 11 section-->
+     <div class="about_session10_maindiv">
+  <div class="container">
+  <p class="about_session10_para1">
+    News and <span class="about_session10_span">Blogs</span>
+  </p>
+  <p class="about_session10_para2">
+    Our happiness is in saring our journey and experiences with you through our articles and blog posts. Feel free to
+    check them and leave your comments
+  </p>
+  <img class="about_session10_image_dot" src="./appdev-images/put.png"/>
+
+  <div class="container about-session">
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <img class="img-fluid about_session10_image" src="./appdev-images/dot.png" alt="Medical">
+        <p class="about_session10_image_p1">
+          MEDICAL
+        </p>
+        <p class="about-session__title">
+          The Future of Cross-Chain Swaps 
+        </p>
+        <div class="d-flex">
+          <img class="img-fluid about-session__profile" src="./appdev-images/man.png" alt="profile">
+        <div class="align-self-end ml-2">
+        <div class="ml-auto"> 
+          <p class="about-session__profile-name mb-0">
+            Kingston Prince
+          </p>
+        </div>
+      </div>
+        <div class="ml-auto"> 
+            <p class="about-session__profile-dob mb-0" style="color: #676968; text-align: right;">
+                Jan 19, 2023
+            </p>
+        </div>
+      </div>
+      </div>
+   
+ 
+      <div class="col-lg-4 col-md-6">
+        <img class="img-fluid about_session10_image" src="./appdev-images/b1.png" alt="Medical">
+        <p class="about_session10_image_p1" style="background: rgba(146, 237, 223, 1);">
+          CHATBOT
+        </p>
+        <p class="about-session__title">
+          The Future of Cross-Chain Swaps
+        </p>
+        <div class="d-flex">
+          <img class="img-fluid about-session__profile" src="./appdev-images/man.png" alt="profile">
+        <div class="align-self-end ml-2">
+        <div class="ml-auto"> 
+          <p class="about-session__profile-name mb-0">
+            Kingston Prince
+          </p>
+        </div>
+      </div>
+        <div class="ml-auto"> 
+            <p class="about-session__profile-dob mb-0" style="color: #676968; text-align: right;">
+                Jan 19, 2023
+            </p>
+        </div>
+      </div>
+      </div>
+     <div class="col-lg-4 col-md-6">
+        <img class="img-fluid about_session10_image" src="./appdev-images/c1.png" alt="Medical">
+        <p class="about_session10_image_p1" style="background: rgba(174, 211, 242, 1); width: 40px;">
+          IOT
+        </p>
+        <p class="about-session__title">
+          The Future of Cross-Chain Swaps
+        </p>
+        <div class="d-flex">
+          <img class="img-fluid about-session__profile" src="./appdev-images/man.png" alt="profile">
+        <div class="align-self-end ml-2">
+        <div class="ml-auto"> 
+          <p class="about-session__profile-name mb-0">
+            Kingston Prince
+          </p>
+        </div>
+      </div>
+        <div class="ml-auto"> 
+            <p class="about-session__profile-dob mb-0" style="color: #676968; text-align: right;">
+                Jan 19, 2023
+            </p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="about_session10_button_div">
+
+      <button type="button" class="about_session10_button">Read more blogs &rarr;</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>     
+
+
+<!-- 12 section -->
+<div class="container">
+  <div class="section13layout">
+      <div class="section13header">
+          <div class="row">
+              <h1 class="section13heading">Frequently Asked <span>Questions <img src="./appdev-images/Rectangle 81.png"/></span></h1>
+          </div>
+          </div>
+<div class="accordion" id="accordionExample">
+  
+      
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Can’t find any answer for your question?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Can’t find any answer for your question?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Can’t find any answer for your question?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Can’t find any answer for your question?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Can’t find any answer for your question?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Can’t find any answer for your question?
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSeven">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Can’t find any answer for your question?
+        </button>
+      </h2>
+      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+ 
+
+<!-- last two-->
+     <div class="form-background">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ">
+        <div class="form-head">Get in <span class="form-touch">Touch</span></div>
+        <h5 class="form-top">Want to start a project with us?</h5>
+        <p class="form-paragraph">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed mol stias animi ad quos modi qui libero laborum ab omnis magnam.</p>
+        <div class="row">
+          <div class="col-md-1">
+            <div class="call-icon"><i class="bi bi-telephone"></i></div>
+            <div class="green-line"></div>
+            <div class="vertical-line"></div>
+          </div>
+          <div class="col-md-11">
+              <div class="step-content">
+                  <h5>STEP 1</h5>
+                  <h6>Join a discovery call</h6>
+                  <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit </p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-md-1">
+              <div class="call-icon"><i class="bi bi-person"></i></div>
+              <div class="green-line"></div>
+              <div class="vertical-line2"></div>
+          </div>
+          <div class="col-md-11">
+              <div class="step-content">
+                  <h5>STEP 2</h5>
+                  <h6>Get top 1% application on your team</h6>
+                  <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit </p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-md-1">
+              <div class="call-icon"><i class="bi bi-check2"></i></div>
+          </div>
+          <div class="col-md-11">
+              <div class="step-content">
+                  <h5>STEP 3</h5>
+                  <h6>Get started and track performance.</h6>
+                  <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit </p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="col-md-6 form-content2">
+        <img src="appdev-images/Ellipse 32.png" class="circleimage">
+        <div class="form-container">
+          <h3 class="form-text">Send Your <span class="form-touch">Idea's</span></h3>
+          <div class="form-line"></div>
+          <form>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="firstname">First Name<span class="form-star">*</span></label>
+                <input id="firstname" type="text" class="form-control" name="first name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lastname">Last Name<span class="form-star">*</span></label>
+                <input id="lastname" type="text" class="form-control" name="last name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email<span class="form-star">*</span></label>
+              <input id="email" type="email" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-control" name="message" style="height: 100px;"></textarea>
+            </div>
+            <button type="submit" class="form-button">Start Your Project</button>
+          </form>
+        </div>
+        <img src="appdev-images/scribble 1.png" class="arrowimage">
+      </div>
+    </div>
+  </div>
+</div>    
+
+
+<!-- footer -->
+    <footer class="footer">
+  <div class="container">
+    <div class="row footer-columns justify-content-between">
+      <div id="footer-column" class="col-md-2 footer-column footer-about">
+        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+          About<i class="bi bi-chevron-down footer-arrow-icon"></i>
+        </h3>
+        <ul id="footer-menu" class="footer-menu">
+          <li>Who We Are</li>
+          <li>Career</li>
+          <li>How We Work</li>
+          <li>Blogs</li>
+          <li>Get in Touch</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-services">
+        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+          Services<i class="bi bi-chevron-down footer-arrow-icon"></i>
+        </h3>
+        <ul id="footer-menu" class="footer-menu">
+          <li>Web App Development</li>
+          <li>Mobile App Development</li>
+          <li>Software Development</li>
+          <li>Support & Maintenance</li>
+          <li>QA Testing</li>
+          <li>DevOps</li>
+          <li>Blog</li>
+          <li>Cloud Services</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-technologies">
+        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+          Technologies<i class="bi bi-chevron-down footer-arrow-icon"></i>
+        </h3>
+        <ul id="footer-menu" class="footer-menu">
+          <li>Blockchain</li>
+          <li>Artificial Intelligence</li>
+          <li>AR & VR</li>
+          <li>Cloud Computing</li>
+          <li>Internet of Things</li>
+          <li>more...</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-industries">
+        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+          Industries<i class="bi bi-chevron-down footer-arrow-icon"></i>
+        </h3>
+        <ul id="footer-menu" class="footer-menu">
+          <li>FinTech</li>
+          <li>Banking</li>
+          <li>Retail</li>
+          <li>Manufacturing</li>
+          <li>Insurance</li>
+          <li>Real Estate</li>
+          <li>Travel & Tourism</li>
+          <li>Education</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-portfolios">
+        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+          Portfolios<i class="bi bi-chevron-down footer-arrow-icon"></i>
+        </h3>
+        <ul id="footer-menu" class="footer-menu">
+          <li>Kid's World</li>
+          <li>Resto</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+    </div>
+  </div>
+    <hr class="footer-border">
+    <div class="container">
+      <div class="row justify-content-between footer-bottom-content">
+          <div class="col-md-auto">
+              <p class="mb-0 footer-text1">Privacy Policy | Terms & Conditions | Sitemap</p>
+          </div>
+          <div class="col-md-auto">
+              <p class="footer-text2"><span class="copysymbol">&copy;</span><span class="copysymbol_text">2024 All Rights Reserved - justlogix.com</span></p>
+          </div>
+          <div class="col-md-auto d-flex justify-content-center">
+              <div class="footer-text3">
+                  <a href="#" class="btn btn-link icon"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="btn btn-link icon"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="btn btn-link icon"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="btn btn-link icon"><i class="bi bi-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+var footerColumns = document.querySelectorAll('#footer-column');
+
+footerColumns.forEach(function(column) {
+    
+    var h3 = column.querySelector('#footer-head');
+
+    
+    var menu = column.querySelector('#footer-menu');
+
+
+    h3.addEventListener('click', function() {
+        
+        menu.classList.toggle('active');
+
+    
+        h3.querySelector('i').classList.toggle('bi-chevron-down');
+        h3.querySelector('i').classList.toggle('bi-chevron-up');
+    });
+});
+});
+
+</script>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+</html>
