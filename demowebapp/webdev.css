@@ -852,15 +852,15 @@ text-align: left;
 
   /*section6============================================*/
 
-  .section6layout{
+  .Development-Methodologies-maindiv{
     width: 100%;
     height: auto;
     margin-top: 108px;
   }
-  .section6header{
+  .Development-Methodologies-header{
     width: 100%;
   }
-  .section6heading{
+  .Development-Methodologies-heading {
     width: 100%;
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 48px;
@@ -869,14 +869,14 @@ text-align: left;
     text-align: left;
     color: rgba(0, 0, 0, 1);
   }
-  .section6heading span{
+  .Development-Methodologies-heading  span{
     font-size: 48px;
     font-weight: 700;
     line-height: 60.34px;
     text-align: left;
     color: rgba(44, 160, 104, 1);
   }
-  .section6col1{
+  .Development-Methodologies-col1{
     width: 100%;
     height: auto;
     margin-top: 30px;
@@ -886,7 +886,7 @@ text-align: left;
     align-items: center;
     justify-content: center;
   }
-  .section6paragraph{
+  .Development-Methodologies-paragraph{
     width: 100%;
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 14px;
@@ -895,7 +895,7 @@ text-align: left;
     text-align: left;
     color: rgba(103, 105, 104, 1);
   }
-  .section6link{
+  .Development-Methodologies-link{
     font-family: 'Source Sans Pro',sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -912,11 +912,11 @@ text-align: left;
     border: 2px solid rgba(44, 160, 104, 1);
     margin-top: -10px;
   }
-  .cardslaayout{
+  .Development-Methodologies-cardlayout{
     width: 100%;
 
   }
-  .section6card1{
+  .Development-Methodologies-card1{
     width: 100%;
     background-color: rgba(44, 160, 104, 0.7); 
     background-image: url('./webdev\ image/1000_F_303094737_NRtiCqDWlk6iNRdJGxE8DTyqwaBKfoxs 2.png'); 
@@ -927,7 +927,7 @@ text-align: left;
     border-radius: 20px;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
   }
-  .section6card2{
+  .Development-Methodologies-card2{
     width: 100%;
     background-color: rgba(44, 160, 104, 0.7); /* Set background color with opacity */
     background-image: url('./webdev\ image/GettyImages-157859687_super 1.png'); /* Set background image */
@@ -938,7 +938,7 @@ text-align: left;
     border-radius: 20px;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for box shadow */
   }
-  .section6card3{
+  .Development-Methodologies-card3{
     width: 100%;
     background-color: rgba(44, 160, 104, 0.7); /* Set background color with opacity */
     background-image: url('./webdev\ image/close-up-person-doing-online-shopping 1.png'); /* Set background image */
@@ -992,16 +992,16 @@ text-align: left;
     padding: 10px;
 }
 
-.section6card1:hover,
-.section6card2:hover,
-.section6card3:hover {
+.Development-Methodologies-card1:hover,
+.Development-Methodologies-card2:hover,
+.Development-Methodologies-card3:hover {
     background-color: #fff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
 }
 
-.section6card1:hover .agiledropdown,
-.section6card2:hover .agiledropdown,
-.section6card3:hover .agiledropdown {
+.Development-Methodologies-card1:hover .agiledropdown,
+.Development-Methodologies-card2:hover .agiledropdown,
+.Development-Methodologies-card3:hover .agiledropdown {
     transform: rotate(180deg);
     border-radius: 15px;
 }
@@ -1016,9 +1016,9 @@ text-align: left;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 /* CSS Changes */
-.section6card1:hover .card1agile,
-.section6card2:hover .card1agile,
-.section6card3:hover .card1agile {
+.Development-Methodologies-card1:hover .card1agile,
+.Development-Methodologies-card2:hover .card1agile,
+.Development-Methodologies-card3:hover .card1agile {
     color: #000; /* Change text color to black */
 }
 
@@ -1032,9 +1032,9 @@ text-align: left;
 /* Add this CSS for mobile devices */
 /* CSS Changes */
 @media screen and (max-width: 767px) {
-    .section6card1,
-    .section6card2,
-    .section6card3 {
+    .Development-Methodologies-card1,
+    .Development-Methodologies-card2,
+    .Development-Methodologies-card3 {
         background-image: none !important; 
         background-color: transparent !important;
         border: 1px solid #D9D9D9;
@@ -1043,7 +1043,7 @@ text-align: left;
         width: 100%;
     }
   
-    .cardslaayout{
+    .Development-Methodologies-cardlayout{
       width: 100%;
       margin: auto;
       margin-top: 20px;
@@ -1067,35 +1067,34 @@ text-align: left;
         display: block !important; /* Show the hidden elements */
     }
 
-    .section6layout {
-        padding-bottom: 20px; /* Add padding to bottom of section6layout */
+    .Development-Methodologies-maindiv {
+        padding-bottom: 20px; /* Add padding to bottom of Development-Methodologies-maindiv */
         width: 100%;
     }
-    .section6col1{
+    .Development-Methodologies-col1{
         width: 100%;
         margin-top: 0;
     }
-    .section6header{
+    .Development-Methodologies-header{
         width: 100%;
     }
-    .section6heading{
+    .Development-Methodologies-heading {
         font-size: 32px;
         font-weight: 600;
         line-height: 40.22px;
         text-align: left;
     }
-    .section6heading span{
+    .Development-Methodologies-heading  span{
         font-size: 32px;
         font-weight: 600;
         line-height: 40.22px;
         text-align: left;
     }
-    .section6heading img{
+    .Development-Methodologies-heading  img{
         width: 28px;
     }
 
 }
-
 /*section 7=============================================*/
 .section7layout{
     width: 100%;

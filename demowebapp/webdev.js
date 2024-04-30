@@ -30,47 +30,46 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // JavaScript
 document.addEventListener('DOMContentLoaded', function () {
-    var cards = document.querySelectorAll('.section6card1, .section6card2, .section6card3');
-    
-    cards.forEach(function (card) {
-        card.addEventListener('mouseover', function () {
-            // Change background color to white on hover
-            this.style.backgroundColor = '#fff';
+  var cards = document.querySelectorAll('.Development-Methodologies-card1, .Development-Methodologies-card2, .Development-Methodologies-card3');
+  
+  cards.forEach(function (card) {
+      card.addEventListener('mouseover', function () {
+          // Change background color to white on hover
+          this.style.backgroundColor = '#fff';
 
-            // Rotate the image and change its color to green
-            var dropdown = this.querySelector('.agiledropdown');
-            // dropdown.classList.add('rotate', 'green');
-            dropdown.style.background = 'linear-gradient(90deg, #23899C 13.04%, #2CA068 91.03%)'; // Change background to gradient
-            
-            // Show the hidden elements
-            var innerPara = this.querySelector('.card1innerpara');
-            var divider = this.querySelector('.card1divider');
-            var moreAboutAgile = this.querySelector('.moreaboutagile');
-            innerPara.style.display = 'block';
-            divider.style.display = 'block';
-            moreAboutAgile.style.display = 'block';
-        });
+          // Rotate the image and change its color to green
+          var dropdown = this.querySelector('.agiledropdown');
+          // dropdown.classList.add('rotate', 'green');
+          dropdown.style.background = 'linear-gradient(90deg, #23899C 13.04%, #2CA068 91.03%)'; // Change background to gradient
+          
+          // Show the hidden elements
+          var innerPara = this.querySelector('.card1innerpara');
+          var divider = this.querySelector('.card1divider');
+          var moreAboutAgile = this.querySelector('.moreaboutagile');
+          innerPara.style.display = 'block';
+          divider.style.display = 'block';
+          moreAboutAgile.style.display = 'block';
+      });
 
-        card.addEventListener('mouseout', function () {
-            // Restore original background color
-            this.style.backgroundColor = 'rgba(44, 160, 104, 0.7)';
-            
-            // Reset image rotation and color
-            var dropdown = this.querySelector('.agiledropdown');
-            // dropdown.classList.remove('rotate', 'green');
-            dropdown.style.background = ''; // Reset background
-            
-            // Hide the elements again
-            var innerPara = this.querySelector('.card1innerpara');
-            var divider = this.querySelector('.card1divider');
-            var moreAboutAgile = this.querySelector('.moreaboutagile');
-            innerPara.style.display = 'none';
-            divider.style.display = 'none';
-            moreAboutAgile.style.display = 'none';
-        });
-    });
+      card.addEventListener('mouseout', function () {
+          // Restore original background color
+          this.style.backgroundColor = 'rgba(44, 160, 104, 0.7)';
+          
+          // Reset image rotation and color
+          var dropdown = this.querySelector('.agiledropdown');
+          // dropdown.classList.remove('rotate', 'green');
+          dropdown.style.background = ''; // Reset background
+          
+          // Hide the elements again
+          var innerPara = this.querySelector('.card1innerpara');
+          var divider = this.querySelector('.card1divider');
+          var moreAboutAgile = this.querySelector('.moreaboutagile');
+          innerPara.style.display = 'none';
+          divider.style.display = 'none';
+          moreAboutAgile.style.display = 'none';
+      });
+  });
 });
-
 
 //section8=================
   const prevBtn = document.getElementById('prevBtn');
