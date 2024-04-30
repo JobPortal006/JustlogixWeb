@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Client Section</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        /* Add your custom CSS styles here */
+        .about-session9-maindiv {
+            height: 600px;
+            background-color: rgba(35, 137, 156, 0.05);
+            position: relative;
+            width: 100%;
+        }
+
+        .about-session9-title-div {
+            position: absolute;
+            margin-top: 64px;
+            gap: 12px;
+            opacity: 0px;
+        }
+
+        .about-session9-para1 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60.34px;
+            text-align: left;
+        }
+
+        .about-session9-span {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60.34px;
+            text-align: left;
+            color: rgba(44, 160, 104, 1);
+        }
+
+        .about-session9-para-div {
+            margin-top: 28px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20.11px;
+            text-align: left;
+        }
+
+        .about_session9_para2 {
+            padding-right: 40px !important;
+        }
+
+        .about-sessiion9-logo-div {
+            height: 180px;
+            top: 299px;
+            gap: 68px;
+            margin: 0px 150px 0px 100px;
+        }
+
+        .about_session9_logo {
+            width: 145px;
+            height: 28px;
+            gap: 0px;
+            opacity: 0px;
+        }
+
+        .about_session9_button_div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about_session9_button {
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20.11px;
+            color: rgba(44, 160, 104, 1);
+            margin-top: 50px;
+        }
+
+        .custom-width {
+            width: 100px;
+        }
+
+        .about-sessiion9-logo-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .session9_checking {
+                display: none;
+            }
+
+            .about-session9-maindiv {
+                /* Adjust styles for smaller screens if needed */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-session9-maindiv">
+        <div class="container">
+            <div class="about-session9-title-div">
+                <p class="about-session9-para1">
+                    Our <span class="about-session9-span">Clients</span>
+                </p>
+                <div class="about-session9-para-div">
+                    <p class="about-session9-para2">
+                        Justlogix has helped global enterprises grow by delivering top-quality software aligning an
+                        expert team of dedicated offshore developers. Management Solution to integrate all data and
+                        business processes across the organization to collect, manage store data from different business
+                        activities.
+                    </p>
+                    <hr class="my-4">
+                </div>
+                <div class="about-sessiion9-logo-container">
+                    <div class="about-sessiion9-logo-div row">
+                        <div class="col-2 about-session9-logo-col1">
+                            <img src="./aboutImages/logo1.png" alt="logo1" class="about-session9-logo img-fluid">
+                        </div>
+                        <div class="col-2">
+                            <img src="./aboutImages/logo2.png" alt="logo1" class="about-session9-logo img-fluid">
+                        </div>
+                        <div class="col-2">
+                            <img src="./aboutImages/logo3.png" alt="logo1"
+                                class="about-session9-logo custom-width img-fluid">
+                        </div>
+                        <div class="col-2">
+                            <img src="./aboutImages/logo6.png" alt="logo1"
+                                class="about-session9-logo custom-width img-fluid">
+                        </div>
+                        <div class="col-2">
+                            <img src="./aboutImages/logo2.png" alt="logo1"
+                                class="about-session9-logo custom-width img-fluid">
+                        </div>
+                        <div class="col-2">
+                            <img src="./aboutImages/logo5.png" alt="logo1"
+                                class="about-session9-logo custom-width img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-sessiion9-logo-div row mt-4">
+                    <div class="col-2">
+                        <img src="./aboutImages/logo6.png" alt="logo1" class="about-session9-logo custom-width img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="./aboutImages/logo7.png" alt="logo1" class="about-session9-logo custom-width img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="./aboutImages/logo8.png" alt="logo1" class="about-session9-logo custom-width img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="./aboutImages/logo9.png" alt="logo1" class="about-session9-logo custom-width img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="./aboutImages/logo10.png" alt="logo1" class="about-session9-logo custom-width img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="./aboutImages/logo11.png" alt="logo1" class="about-session9-logo custom-width img-fluid">
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="about-session9-button-div text-center">
+                <button type="button" class="about-session9-button btn btn-outline-success">View More Clients &rarr;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-mjLQGQoqwy3bKa0+eN5v5/KyZvN/iaVbMs8rIe3FMEN9L+K1eCMTru/zmSkuArL2"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-pzjw8j+5fQVHDuC8n8e+9RHpf0zrUhLX+2Q9gFmGnNqIuG+6qjoP5o7fsyyl7+JX"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
